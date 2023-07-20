@@ -1,8 +1,6 @@
 import express from "express";
 import dotenv from "dotenv";
 import mysql from "mysql2/promise";
-import { test } from "node:test";
-import { get } from "node:http";
 
 dotenv.config();
 const connection = await mysql.createConnection(
