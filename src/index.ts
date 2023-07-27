@@ -19,29 +19,4 @@ app.listen(process.env.PORT, () => {
   console.log(`listening on port ${process.env.PORT}`);
 });
 
-/* const testConnection = async () => {
-  const dropTableIfExist = "DROP TABLE IF EXISTS products";
-  const createProductsTableSQL = `CREATE TABLE products (
-    id INT NOT NULL AUTO_INCREMENT,
-    product_name VARCHAR(240), 
-    product_price INT(20),
-    PRIMARY KEY (id)
-    )`;
-  const insertProduct =
-    "INSERT INTO products (product_name, product_price) VALUES ('product1', 100), ('product2', 200), ('product3', 300)";
-
-  const populate = async () => {
-    try {
-      await connection.query(dropTableIfExist);
-      await connection.query(createProductsTableSQL);
-      await connection.query(insertProduct);
-      console.log("Populated the table with products");
-      return await connection.query("SELECT * FROM products");
-    } catch (error) {
-      console.log(error);
-    }
-  };
-
-  await populate();
-  connection.end();
-}; */
+export default app;
