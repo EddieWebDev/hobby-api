@@ -8,5 +8,5 @@
     "strict": true,
     "forceConsistentCasingInFileNames": true
   },
-  "include": ["src/**/*", "./api/*.ts"]
+  "include": ["src/**/*"]
 }
