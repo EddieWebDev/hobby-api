@@ -7,7 +7,7 @@
   "scripts": {
     "build": "tsc",
     "dev": "nodemon dist/index.js",
-    "vercel-build": "echo hello moto",
+    "vercel-build": "echo hello moto"
   },
   "keywords": [],
   "author": "",
